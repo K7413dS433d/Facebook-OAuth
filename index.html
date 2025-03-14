@@ -3,16 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login with facebook</title>
+    <title>Login with Facebook</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <h2>Add Facebook Login to your webpage</h2>
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <!-- facebook login button  -->
+      <button id="facebook-login-btn" class="login-btn">
+        <span class="icon">f</span>
+        <span class="text">Login with Facebook</span>
+      </button>
+    </div>
+    <div id="fb-root"></div>
 
-    <!-- Set the element id for the JSON response -->
-    <p id="profile"></p>
+    <div class="content">
+      <div class="card">
+        <div class="firstinfo">
+          <img src="https://randomuser.me/api/portraits/lego/6.jpg" />
+          <div class="profileinfo">
+            <h1></h1>
+            <h3></h3>
+            <p class="email"></p>
+          </div>
+        </div>
+      </div>
+      <div class="badgescard">Good Morning</div>
+    </div>
 
-    <script src="./js/index.js"></script>
+    
+    <script
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0&appId=1314307996459775"
+    ></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
-
-
